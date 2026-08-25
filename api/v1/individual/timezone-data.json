@@ -1,0 +1,6 @@
+{
+  "id": "timezone-data",
+  "name": "Timezone Data",
+  "status": "scaffold",
+  "source": "IANA tz database"
+}
