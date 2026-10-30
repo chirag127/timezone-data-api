@@ -1,0 +1,55 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Timezone Data",
+    "description": "All IANA timezones with UTC offsets, DST rules, and country mapping",
+    "version": "1.0.0",
+    "license": {
+      "name": "public-domain"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://chirag127.github.io/timezone-data",
+      "description": "GitHub Pages"
+    }
+  ],
+  "paths": {
+    "/data.json": {
+      "get": {
+        "summary": "Timezone Data data",
+        "description": "All IANA timezones with UTC offsets, DST rules, and country mapping",
+        "responses": {
+          "200": {
+            "description": "JSON response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/timezones": {
+      "get": {
+        "summary": "Timezone Data",
+        "description": "All IANA timezones with UTC offsets, DST rules, and country mapping",
+        "responses": {
+          "200": {
+            "description": "JSON response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
